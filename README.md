@@ -7,6 +7,20 @@ Two SDR tonemappers for Unity's High Definition Render Pipeline, implemented as 
 
 Both replace HDRP's own Tonemapping. Use one of them at a time.
 
+## Comparison
+
+These images show the Classic Sponza scene in the same frame. The HDRP settings come from the scene's profile (auto exposure, white balance, and color grading), and only the tonemapper changes. LPM and AgX use a lower exposure to roughly match ACES brightness.
+
+![ACES, FidelityFX LPM, LPM with Highlight Desaturation, AgX Base, AgX Punchy and AgX Golden in the Sponza atrium](Documentation~/images/comparison.jpg)
+
+Close-up of the sunlit wall:
+
+![The sunlit wall with each tonemapper](Documentation~/images/comparison-detail.jpg)
+
+- **ACES** desaturates highlights towards white.
+- **FidelityFX LPM** keeps the hue and saturation of highlights, so warm sunlight on a warm surface stays orange. Highlight Desaturation pulls it towards white, close to ACES.
+- **AgX** goes towards white on its own, with softer contrast. Punchy adds contrast and saturation, and Golden is a strong warm grade.
+
 ## Requirements
 
 - Unity 6000.6 or newer with HDRP 17.6.
