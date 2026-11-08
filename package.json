@@ -1,0 +1,34 @@
+{
+  "name": "com.stylovich.hdrp-tonemapper",
+  "version": "0.1.0",
+  "displayName": "HDRP Tonemapper (LPM + AgX)",
+  "description": "SDR tonemappers for the High Definition Render Pipeline, as custom post processes: a port of AMD FidelityFX LPM (Luma Preserving Mapper) and AgX (Blender 4.x, Rec.2020) with its Punchy / Golden looks. Both replace HDRP's Tonemapping (set it to None).",
+  "unity": "6000.6",
+  "dependencies": {
+    "com.unity.render-pipelines.high-definition": "17.6.0"
+  },
+  "keywords": [
+    "hdrp",
+    "tonemapping",
+    "tonemapper",
+    "post-processing",
+    "lpm",
+    "fidelityfx",
+    "agx"
+  ],
+  "author": {
+    "name": "stylovich",
+    "url": "https://github.com/stylovich"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stylovich/HDRP-Tonemapper.git"
+  },
+  "samples": [
+    {
+      "displayName": "Tonemapping Profiles",
+      "description": "Volume profiles with HDRP's Tonemapping set to None and either FidelityFX LPM or AgX enabled.",
+      "path": "Samples~/Tonemapping Profiles"
+    }
+  ]
+}
