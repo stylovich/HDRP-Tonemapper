@@ -69,6 +69,8 @@ The inspector shows where 0.18 lands on screen and plots the tone curve with per
 - **Input range.** Both effects run at **After Post Process**, so HDRP's color grading has already run. With Tonemapping set to None, its grading LUT clamps the input at about 59 (linear). To recover highlights, lower exposure earlier (Exposure, or Color Adjustments > Post Exposure) instead of with the tonemapper's own Exposure.
 - **Builds.** The shaders live in `Resources` folders, so they're included in player builds.
 
-## Third-party code
+## License
 
-The LPM port is based on AMD FidelityFX LPM (MIT). The AgX implementation uses constants and formulas from Google Filament (Apache-2.0), three.js (MIT), and Benjamin Wrensch's "Minimal AgX implementation" (MIT). See [Third Party Notices.md](Third%20Party%20Notices.md).
+MIT. See [LICENSE.md](LICENSE.md).
+
+The LPM port is based on AMD FidelityFX LPM (MIT). The AgX implementation uses constants and formulas from Google Filament (Apache-2.0), three.js (MIT), and Benjamin Wrensch's "Minimal AgX implementation" (MIT). Those parts keep their own licenses. See [Third Party Notices.md](Third%20Party%20Notices.md).

@@ -4,6 +4,7 @@
   "displayName": "HDRP Tonemapper (LPM + AgX)",
   "description": "SDR tonemappers for the High Definition Render Pipeline, as custom post processes: a port of AMD FidelityFX LPM (Luma Preserving Mapper) and AgX (Blender 4.x, Rec.2020) with its Punchy / Golden looks. Both replace HDRP's Tonemapping (set it to None).",
   "unity": "6000.6",
+  "license": "MIT",
   "dependencies": {
     "com.unity.render-pipelines.high-definition": "17.6.0"
   },
