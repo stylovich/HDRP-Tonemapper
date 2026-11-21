@@ -9,7 +9,7 @@ Both replace HDRP's own Tonemapping. Use one of them at a time.
 
 ## Comparison
 
-These images show the Classic Sponza scene in the same frame. The HDRP settings come from the scene's profile (auto exposure, white balance, and color grading), and only the tonemapper changes. LPM and AgX use a lower exposure to roughly match ACES brightness.
+These images show the Classic Sponza scene in the same frame. The HDRP settings come from the scene's profile (auto exposure, indirect lighting, and color grading), and only the tonemapper changes. Each tonemapper uses its default settings except for the ones in the labels. LPM and AgX use a lower exposure to roughly match ACES brightness.
 
 ![ACES, FidelityFX LPM, LPM with Highlight Desaturation, AgX Base, AgX Punchy and AgX Golden in the Sponza atrium](Documentation~/images/comparison.jpg)
 
@@ -20,6 +20,22 @@ Close-up of the sunlit wall:
 - **ACES** desaturates highlights towards white.
 - **FidelityFX LPM** keeps the hue and saturation of highlights, so warm sunlight on a warm surface stays orange. Highlight Desaturation pulls it towards white, close to ACES.
 - **AgX** goes towards white on its own, with softer contrast. Punchy adds contrast and saturation, and Golden is a strong warm grade.
+
+### Tuned LPM preset
+
+`OPT` is a FidelityFX LPM setup tuned for this scene. The image compares it with ACES, LPM with Highlight Desaturation, and AgX Base: full frames on top and sunlit-wall close-ups below.
+
+| Setting | Value |
+|---|---|
+| Exposure | −0.65 EV |
+| Curve Exposure | 6.05 (HDR Maximum 64) |
+| Contrast / Shoulder Contrast | 0.35 / 1.05 |
+| Saturation | (0.1, −0.1, 0) |
+| Crosstalk | (1, 1, 1/128) |
+| Highlight Desaturation / Start | 0.7 / 0.3 |
+| HDRP Color Adjustments: Saturation | −10 |
+
+![ACES, LPM with Highlight Desaturation, AgX Base and the OPT preset, full frame and sunlit wall close-up](Documentation~/images/comparison-opt.jpg)
 
 ## Requirements
 
