@@ -28,7 +28,7 @@
   "samples": [
     {
       "displayName": "Tonemapping Profiles",
-      "description": "Volume profiles with HDRP's Tonemapping set to None and either FidelityFX LPM or AgX enabled.",
+      "description": "Volume profiles with HDRP's Tonemapping set to None: FidelityFX LPM and AgX with default settings, and OPT, a tuned FidelityFX LPM preset with Color Adjustments.",
       "path": "Samples~/Tonemapping Profiles"
     }
   ]

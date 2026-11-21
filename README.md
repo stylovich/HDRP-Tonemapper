@@ -23,7 +23,7 @@ Close-up of the sunlit wall:
 
 ### Tuned LPM preset
 
-`OPT` is a FidelityFX LPM setup tuned for this scene. The image compares it with ACES, LPM with Highlight Desaturation, and AgX Base: full frames on top and sunlit-wall close-ups below.
+`OPT` is a FidelityFX LPM setup tuned for this scene. It's included in the **Tonemapping Profiles** sample as `OPT Tonemapping Profile`. The image compares it with ACES, LPM with Highlight Desaturation, and AgX Base: full frames on top and sunlit-wall close-ups below.
 
 | Setting | Value |
 |---|---|
@@ -64,7 +64,7 @@ Append `#<commit or tag>` to the URL to pin a version.
 2. **Turn off HDRP's tonemapping.** In your Volume profile, set HDRP's **Tonemapping** mode to **None**. The inspectors warn you when it isn't and offer a fix.
 3. **Add the component.** Add **Post-processing > Custom > FidelityFX LPM Tonemapping** or **Post-processing > Custom > AgX Tonemapping** to the profile. Set its **Mode**.
 
-The **Tonemapping Profiles** sample (Package Manager > Samples) has ready-made profiles for both.
+The **Tonemapping Profiles** sample (Package Manager > Samples) has ready-made profiles for both, plus the tuned `OPT` preset described in [Tuned LPM preset](#tuned-lpm-preset).
 
 ## FidelityFX LPM
 
